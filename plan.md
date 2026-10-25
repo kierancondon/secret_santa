@@ -1,0 +1,5 @@
+# Concept
+I want to make a fun way for my family to discover their secret santa gift receiver names. I will host a small website on the github.io where they can enter their secret name. If they enter a correct name they will be greeted by their real name and learn who they must buy a present for. I will provide a list of all names to you below. You can come up with secret christmas names for them and figure out the combination of who buys what for who. Keep the mapping of real name to secret name in a separate file from the combination of (real) names for who buys for who, as I will try to avoid looking at the latter so it is a surprise for me too.
+
+# Design principals
+I want this to be a fun experience and all people are going to look at this on their phone. Help me come up with good ideas that are fun and christmas-y. The site should avoid external apis and be quite stand alone. Ok for moving animations but I want to avoid a complex build.

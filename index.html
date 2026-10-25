@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f3d2e">
+  <title>Secret Santa - North Pole Post</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="snow" id="snow" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="masthead">
+      <p class="eyebrow">North Pole Post Office</p>
+      <h1>Secret Santa</h1>
+    </header>
+
+    <section id="entry-view" aria-labelledby="entry-heading">
+      <h2 id="entry-heading" class="lede">A letter from the North Pole is waiting for you.</h2>
+      <form id="entry-form" novalidate>
+        <label for="secret-name">Your secret Christmas name</label>
+        <input id="secret-name" name="secret-name" type="text" autocomplete="off" autocapitalize="words" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-describedby="entry-error">
+        <p id="entry-error" class="error" role="alert"></p>
+        <button type="submit" id="entry-submit" class="primary">Find my letter</button>
+      </form>
+    </section>
+
+    <section id="letter-view" hidden aria-label="Your letter">
+      <h2 id="greeting" class="greeting" tabindex="-1"></h2>
+      <p class="hint" id="seal-hint">Tap the wax seal to open it.</p>
+
+      <div class="envelope" id="envelope">
+        <div class="flap"></div>
+        <img class="stamp" src="assets/stamp.svg" alt="" width="60" height="80">
+        <div class="address">
+          <small>To</small>
+          <strong id="address-name"></strong>
+        </div>
+        <button type="button" class="seal" id="seal" aria-describedby="seal-hint">
+          <span class="seal-label">Break the seal to open your letter</span>
+          <span aria-hidden="true">&#9733;</span>
+        </button>
+      </div>
+
+      <article class="letter" id="letter" hidden>
+        <h3 id="letter-heading" tabindex="-1"></h3>
+        <p>The elves have checked their list twice. This Christmas, you are buying a gift for</p>
+        <p class="recipient" id="recipient"></p>
+        <p class="shh">Shh! Keep it secret until Christmas.</p>
+        <button type="button" class="secondary" id="reseal">Seal the letter again</button>
+      </article>
+
+      <button type="button" class="link" id="reset">Use another name</button>
+    </section>
+  </main>
+
+  <script src="data/secrets.js"></script>
+  <script src="data/assignments.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
