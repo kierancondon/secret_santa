@@ -1,8 +1,8 @@
 window.ASSIGNMENTS = {
-  "Anne": "Caroline",
-  "Caroline": "Avery",
-  "Hayley": "Kieran",
-  "Avery": "Oisin",
-  "Oisin": "Anne",
-  "Kieran": "Hayley"
+  "Anne": "Avery",
+  "Caroline": "Hayley",
+  "Hayley": "Anne",
+  "Avery": "Caroline",
+  "Oisin": "Kieran",
+  "Kieran": "Oisin"
 };
